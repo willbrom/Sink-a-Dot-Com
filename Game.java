@@ -11,6 +11,7 @@ class Game {
 		boolean thirdHit = false;
 
 		int totalHits = 0;
+		int totalGuess = 0;
 
 		int[] cells = new int[3];
 		cells[0] = firstCell;
@@ -21,7 +22,8 @@ class Game {
 
 		while(totalHits < 3) {
 			int guess = sc.nextInt();	
-		
+			totalGuess++;
+
 			if (guess == cells[0] && !firstHit) {
 				firstHit = true;
 				totalHits++;
@@ -43,5 +45,6 @@ class Game {
 		}
 
 		System.out.println("Kill!");
+		System.out.println("You took " + totalGuess + " guesses.");
 	}
 }
