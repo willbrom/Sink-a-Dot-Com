@@ -1,3 +1,4 @@
+#SimpleDotCom
 DECLARE an int array to hold the location cells. Call it locationsCells.
 DECLARE an int to hold number of hits. Call it numOfHits and set it to 0.
 
@@ -19,3 +20,15 @@ METHOD: String checkYourself(String usersGuess)
 METHOD: void setLocationCells(int[] cellLocations)
     GET the cell locations as an int array parameter
     ASSIGN the cell locations parameter to the cell locations instance variable
+
+
+#SimpleDotComGame
+METHOD: public static void main(String[] args)
+    DECLARE an int variable to hold the number of user guesses named numOfGuesses
+    CREATE a single SimpleDotCom object
+    DECLARE an int array of length 3 to hold the DotCom cell locations. Call it locationsCells
+    COMPUTE a random number between 0 and 4 that will be the starting cell location
+    INITIALIZE locationsCells with the computed random number along with 2 consecutive numbers
+    WHILE the dot com is still alive:
+      GET user input from command line
+    TELL user howmany guesses they took
