@@ -29,6 +29,10 @@ METHOD: public static void main(String[] args)
     DECLARE an int array of length 3 to hold the DotCom cell locations. Call it locationsCells
     COMPUTE a random number between 0 and 4 that will be the starting cell location
     INITIALIZE locationsCells with the computed random number along with 2 consecutive numbers
+    DECLARE a String variable to hold the String returned by checkYourself. Call it result and give it initial value 'Miss'
     WHILE the dot com is still alive:
       GET user input from command line
-    TELL user howmany guesses they took
+      CHECK the user input by calling checkYourself on the SimpleDotCom object
+      UPDATE the result variable with the value returned by checkYourself
+
+    TELL user how many guesses they took
