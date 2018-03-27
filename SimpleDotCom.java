@@ -25,6 +25,7 @@ public class SimpleDotCom {
         result = "Kill";
       }
 
+      System.out.println(result);
       return result;
     }
 
